@@ -9,6 +9,9 @@ const App = () => {
   const [currentNumber, setCurrentNumber] = useState('0');
 
   const handleAddNumber = (num) => {
+    setCurrentNumber(prev => `${num}${prev === '0' ? '' : prev}`)
+  }
+
   const handleOnClear = () => {
     setCurrentNumber('0')
   }
