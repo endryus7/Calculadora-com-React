@@ -1,7 +1,7 @@
 import Input from './components/Input';
 import Button from './components/Button';
 
-import { Container, Content, Row, } from './styles'
+import { Container, Content, Row, ZeroRow } from './styles'
 import { useState } from 'react';
 
 
@@ -120,6 +120,9 @@ const App = () => {
             <Button label="3" onClick={() => handleAddNumber('3')}/>
             <Button label="=" onClick={handleEquals}/>
         </Row>
+        <ZeroRow>
+            <Button label="0" onClick={() => handleAddNumber('0')}/>
+        </ZeroRow>
         </Content>
     </Container>
   );
